@@ -1,22 +1,14 @@
-var pronoun = ['the','our'];
-var adj = ['great', 'big' ];
-var noun = ['jogger','racoon'];
+var pronoun = ["the", "our"];
+var adj = ["great", "big"];
+var noun = ["jogger", "racoon"];
+var link = [".com", ".net", ".es"];
 
-
-for (let x=0 ; x<pronoun.length;x++){
-
-           
-                for (let y=0;y<adj.length;y++ ){
-                           
-                    
-                            for (let z=0;z<noun.length;z++)
-                            {
-                                
-                            console.log(pronoun[x]+adj[y]+noun[z]+".com");
-                            
-                            }
-
-                }
-            
-
+for (let x of pronoun) {
+  for (let y of adj) {
+    for (let z of noun) {
+      for (let a of link) {
+        console.log(x + y + z + a);
+      }
+    }
+  }
 }
